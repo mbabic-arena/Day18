@@ -1,77 +1,142 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
+html,
+body {
+  height: 100%;
   margin: 0;
-}
-
-.container {
-  width: 90%;
-  margin: auto;
-  overflow: hidden;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.button_1 {
-  height: 40px;
-  background: #e04318;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: white;
-  border: 0;
-}
-
-#showcase .container h1 {
-  color: white;
-}
-
-#showcase .container p {
-  color: white;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 header {
-  background: #495861;
-  color: white;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #e04318 3px solid;
+  background-color: #35424A;
+  height: 10%;
+}
+header .container {
+  display: flex;
+  height: 100%;
 }
 
-header a {
+#branding {
+  flex: 2;
+}
+nav {
+  flex: 1;
+}
+ul {
+  display: flex;
+  height: fit-content;
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+li {
+  padding-top: 5%;
+  list-style-type: none;
+  padding-right: 5%;
+}
+
+.current a {
+  color: rgb(238, 67, 37);
+}
+a {
   text-decoration: none;
+  color: white;
   text-transform: uppercase;
-  font-size: 14;
+  font-size: 13pt;
+}
+
+.highlight {
+  color: rgb(238, 67, 37);
+}
+#branding h1 {
+  color: white;
+  display: block;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+#showcase {
+  width: 100%;
+  height: 70%;
+  background: url("../img/gigi-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale() opacity(1.0);
+  background-color: rgba(22, 22, 22, 0.5);
+  position: relative;
+}
+
+#showcase .container {
+  position: absolute;
+  width: 100%;
+  margin-top: 5%;
+  text-shadow: slategrey;
+}
+
+#showcase .container h1 {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 30pt;
+  text-shadow: slategray;
+}
+
+#showcase .container p {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+#newsletter {
+  background-color: rgb(51, 58, 65);
+  display: flex;
+}
+
+#newsletter .container {
+  display: flex;
+  width: 100%;
+}
+
+#newsletter .container h1 {
+  flex: 1;
+  color: white;
+  padding-left: 10%;
+}
+
+#newsletter .container form {
+  flex: 1;
+  margin-left: 35%;
+}
+
+#newsletter .container input {
+  margin-top: 5%;
+}
+
+.button_1 {
+  background-color: rgb(223, 63, 35);
   color: white;
 }
 
-header li {
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
+#boxes .container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
 }
 
-header #branding {
-  float: left;
+.box {
+  flex-basis: 25%;
 }
 
-header #branding h1 {
-  margin: 0;
+footer {
+  background-color: rgb(223, 63, 35);
+  color: white;
+  display: block;
+  padding-bottom: 5px;
+  text-align: center;
 }
-
-header nav {
-  float: right;
-  margin-top: 10px;
-}
-
-header .highlight,
-header .current a {
-  color: #ca411c;
-  font-weight: bold;
-}
-
-
-
-
